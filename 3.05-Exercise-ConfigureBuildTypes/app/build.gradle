@@ -24,7 +24,7 @@ android {
     buildToolsVersion "24.0.1"
 
     defaultConfig {
-        applicationId "com.udacity.gradle.buildtypes"
+        applicationId "com.udacity.gradle.buildtypes" + application_id_suffix
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
@@ -35,6 +35,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+	debug {
+		application_id_suffix '.debug'
+	}
     }
 }
 
