@@ -1,0 +1,8 @@
+task myTask { 
+// some props
+name "MyTask"
+version 1.0
+// sequence of action
+doFirst { println name}
+doLast {println version}
+}
